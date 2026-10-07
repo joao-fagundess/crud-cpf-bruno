@@ -1,0 +1,46 @@
+{
+  "pessoas": [
+    {
+      "id": 1,
+      "nome": "Maria",
+      "sobrenome": "Silva",
+      "email": "maria.silva@email.com",
+      "idade": 20,
+      "telefone": "(11) 98888-1111",
+      "rua": "Rua das Flores",
+      "bairro": "Centro",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "rg": "12.345.678-9",
+      "cpf": "123.456.789-00"
+    },
+    {
+      "id": 4,
+      "nome": "Pedro",
+      "sobrenome": "Oliveira",
+      "email": "pedro.oliveira@email.com",
+      "idade": 30,
+      "telefone": "(21) 97777-2222",
+      "rua": "Avenida Atlântica",
+      "bairro": "Copacabana",
+      "cidade": "Rio de Janeiro",
+      "estado": "RJ",
+      "rg": "22.333.444-5",
+      "cpf": "111.222.333-44"
+    },
+    {
+      "id": 5,
+      "nome": "Tiago",
+      "sobrenome": "Santos",
+      "email": "tiago.santos@email.com",
+      "idade": 70,
+      "telefone": "(31) 96666-3333",
+      "rua": "Rua da Bahia",
+      "bairro": "Savassi",
+      "cidade": "Belo Horizonte",
+      "estado": "MG",
+      "rg": "33.444.555-6",
+      "cpf": "999.888.777-66"
+    }
+  ]
+}

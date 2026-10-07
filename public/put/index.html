@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PUT — Atualizar</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>CRUD CPF — Atualizar</h1>
+    <nav>
+      <a href="/">Início</a>
+      <a href="/post/">Cadastrar (POST)</a>
+      <a href="/get/">Listar (GET)</a>
+      <a href="/put/" class="ativo">Atualizar (PUT)</a>
+      <a href="/delete/">Excluir (DELETE)</a>
+    </nav>
+  </header>
+  <main>
+    <section class="card">
+      <h2>PUT — Editar registro</h2>
+      <p class="descricao">Busque pelo CPF, altere os campos e clique em Atualizar.</p>
+      <div class="grade">
+        <div class="campo">
+          <label for="cpfBusca">CPF para busca</label>
+          <input id="cpfBusca" placeholder="Digite o CPF para busca">
+        </div>
+      </div>
+      <div class="acoes">
+        <button type="button" id="btn-buscar">Buscar</button>
+      </div>
+      <form id="form-put">
+        <input type="hidden" id="id">
+        <div class="grade">
+          <div class="campo"><label for="cpf">CPF</label><input id="cpf" required></div>
+          <div class="campo"><label for="nome">Nome</label><input id="nome" required></div>
+          <div class="campo"><label for="sobrenome">Sobrenome</label><input id="sobrenome" required></div>
+          <div class="campo"><label for="email">E-mail</label><input id="email" type="email" required></div>
+          <div class="campo"><label for="idade">Idade</label><input id="idade" type="number" min="0" required></div>
+          <div class="campo"><label for="telefone">Telefone</label><input id="telefone" required></div>
+          <div class="campo"><label for="rg">RG</label><input id="rg" required></div>
+          <div class="campo"><label for="rua">Rua</label><input id="rua" required></div>
+          <div class="campo"><label for="bairro">Bairro</label><input id="bairro" required></div>
+          <div class="campo"><label for="cidade">Cidade</label><input id="cidade" required></div>
+          <div class="campo"><label for="estado">Estado</label><input id="estado" maxlength="2" required></div>
+        </div>
+        <div class="acoes">
+          <button type="submit">Atualizar</button>
+        </div>
+      </form>
+      <div id="mensagem" class="mensagem"></div>
+    </section>
+  </main>
+  <script src="/js-util.js"></script>
+  <script src="put.js"></script>
+</body>
+</html>

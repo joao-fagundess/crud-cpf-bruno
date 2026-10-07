@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GET — Listar</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>CRUD CPF — Listar</h1>
+    <nav>
+      <a href="/">Início</a>
+      <a href="/post/">Cadastrar (POST)</a>
+      <a href="/get/" class="ativo">Listar (GET)</a>
+      <a href="/put/">Atualizar (PUT)</a>
+      <a href="/delete/">Excluir (DELETE)</a>
+    </nav>
+  </header>
+  <main>
+    <section class="card">
+      <h2>GET — Listar registros</h2>
+      <p class="descricao">Digite um CPF para filtrar ou deixe em branco para ver todos.</p>
+      <div class="grade">
+        <div class="campo">
+          <label for="cpfBusca">Busca por CPF</label>
+          <input id="cpfBusca" placeholder="000.000.000-00">
+        </div>
+      </div>
+      <div class="acoes">
+        <button type="button" id="btn-buscar">Buscar</button>
+        <button type="button" class="secundario" id="btn-todos">Mostrar todos</button>
+      </div>
+      <div id="mensagem" class="mensagem"></div>
+      <div class="tabela-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>CPF</th>
+              <th>Nome</th>
+              <th>Sobrenome</th>
+              <th>E-mail</th>
+              <th>Idade</th>
+              <th>Telefone</th>
+              <th>Rua</th>
+              <th>Bairro</th>
+              <th>Cidade</th>
+              <th>Estado</th>
+              <th>RG</th>
+            </tr>
+          </thead>
+          <tbody id="tabela-corpo"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <script src="/js-util.js"></script>
+  <script src="get.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DELETE — Excluir</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>CRUD CPF — Excluir</h1>
+    <nav>
+      <a href="/">Início</a>
+      <a href="/post/">Cadastrar (POST)</a>
+      <a href="/get/">Listar (GET)</a>
+      <a href="/put/">Atualizar (PUT)</a>
+      <a href="/delete/" class="ativo">Excluir (DELETE)</a>
+    </nav>
+  </header>
+  <main>
+    <section class="card">
+      <h2>DELETE — Excluir registro</h2>
+      <p class="descricao">Informe o CPF. O sistema localiza o ID e remove o registro.</p>
+      <div class="grade">
+        <div class="campo">
+          <label for="cpf">CPF</label>
+          <input id="cpf" placeholder="000.000.000-00">
+        </div>
+      </div>
+      <div class="acoes">
+        <button type="button" class="perigo" id="btn-deletar">Deletar</button>
+      </div>
+      <div id="mensagem" class="mensagem"></div>
+    </section>
+  </main>
+  <script src="/js-util.js"></script>
+  <script src="delete.js"></script>
+</body>
+</html>
